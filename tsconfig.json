@@ -1,0 +1,29 @@
+{
+  "include": [
+    ".storybook/**/*",
+    "./stories/**/*",
+    "./scripts",
+    "./packages/config/*",
+    "./apps/*",
+    "./@types"
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+  "compilerOptions": {
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "target": "ES2015",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "allowJs": true,
+    "strict": false,
+    "baseUrl": "."
+  }
+}
